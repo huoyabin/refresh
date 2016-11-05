@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+	<meta name="format-detection" content="telephone=no"/>
+	<meta name="format-detection" content="email=no"/>
+	<title>Document</title>
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<style>
+		*{margin: 0;padding: 0;-webkit-box-sizing:border-box;}
+		html,body,.wrap{width: 100%;height: 100%;overflow: hidden;}
+		body{font-size: 0.16rem;}
+		.wrap{display: -webkit-box;-webkit-box-orient:vertical;}
+		header{width: 100%;height: .5rem;background: #ccc;color: #666;font-weight: bold;text-align: center;line-height: .5rem;border-bottom: 1px solid #666;}
+		#main{-webkit-box-flex:1;overflow-y: scroll;}
+		dl{width: 100%;border-bottom: 1px solid #666;display: -webkit-box;padding:10px 5px;}
+		dt{width: 50px;height: 50px;background: url(img/star.gif) no-repeat; background-size: 100% 100%;margin-right: 10px;}
+		dt.update{width: 50px;height: 50px;margin-right: 10px;}
+		dt.update img{width: 50px;height: 50px;}
+
+		dd{-webkit-box-flex:1;display: -webkit-box;font-size: 14px;line-height: 20px;color: #888}
+		time{line-height: 50px;padding-left: 10px}
+		#box dl p{-webkit-box-flex:1;position: relative;}
+		/* #box dl p:after{
+			content: "···";
+			width:108px;
+			display:block;
+			position:absolute;
+			right: 0;
+			bottom: 0;
+			background: #fff;
+		} */
+		#down_box{
+			overflow: hidden;
+			background: red;
+		}
+		#down_box p{
+			text-align: center;
+			line-height: 50px;
+		}
+		@keyframes rotate{
+			0%{
+				-webkit-transform:rotate(0);
+			}
+			100%{
+				-webkit-transform:rotate(360deg);
+			}
+		}
+		#down_box p.loading:before{
+			content: "";
+			width: 30px;
+			height: 30px;
+			border: 1px solid #666;
+			display: inline-block;
+			border-radius: 50%;
+			vertical-align: middle;
+			border-left: none;
+			-webkit-animation:rotate 1s linear infinite;
+		}
+		#up_box{
+			overflow: hidden;
+			background: red;
+		}
+		#up_box p{
+			text-align: center;
+			line-height: 50px;
+		}
+		
+		#up_box p.loading:before{
+			content: "";
+			width: 30px;
+			height: 30px;
+			border: 1px solid #666;
+			display: inline-block;
+			border-radius: 50%;
+			vertical-align: middle;
+			border-left: none;
+			-webkit-animation:rotate 1s linear infinite;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="wrap">
+		<header>拖拽刷新加载</header>
+		<main id='main'>
+			<div id='box'>
+				
+				<dl>
+					<dt></dt>
+					<dd>
+						<p>拖拽刷新加载拖拽刷新加载拖拽刷新加载拖拽刷新加载拖拽刷新拖拽刷新</p>
+						<time>2016-9-13</time>
+						
+					</dd>
+				</dl>
+				<dl>
+					<dt></dt>
+					<dd>
+						<p>拖拽刷新加载拖拽刷新加载拖拽刷新加载拖拽刷新加载拖拽刷新</p>
+						<time>2016-9-13</time>
+						
+					</dd>
+				</dl>
+				<dl>
+					<dt></dt>
+					<dd>
+						<p>拖拽刷新加载拖拽刷新加载拖拽刷新加载拖拽刷新加载拖拽刷新</p>
+						<time>2016-9-13</time>
+						
+					</dd>
+				</dl>
+				<dl>
+					<dt></dt>
+					<dd>
+						<p>拖拽刷新加载拖拽刷新加载拖拽刷新加载拖拽刷新加载拖拽刷新</p>
+						<time>2016-9-13</time>
+						
+					</dd>
+				</dl>
+				<dl>
+					<dt></dt>
+					<dd>
+						<p>拖拽刷新加载拖拽刷新加载拖拽刷新加载拖拽刷新加载拖拽刷新</p>
+						<time>2016-9-13</time>
+						
+					</dd>
+				</dl>
+				<dl>
+					<dt></dt>
+					<dd>
+						<p>拖拽刷新加载拖拽刷新加载拖拽刷新加载拖拽刷新加载拖拽刷新</p>
+						<time>2016-9-13</time>
+						
+					</dd>
+				</dl>
+				<dl>
+					<dt></dt>
+					<dd>
+						<p>拖拽刷新加载拖拽刷新加载拖拽刷新加载拖拽刷新加载拖拽刷新</p>
+						<time>2016-9-13</time>
+						
+					</dd>
+				</dl>
+				<dl>
+					<dt></dt>
+					<dd>
+						<p>拖拽刷新加载拖拽刷新加载拖拽刷新加载拖拽刷新加载拖拽刷新</p>
+						<time>2016-9-13</time>		
+					</dd>
+				</dl>
+				<dl>
+					<dt></dt>
+					<dd>
+						<p>拖拽刷新加载拖拽刷新加载拖拽刷新加载拖拽刷新加载拖拽刷新</p>
+						<time>2016-9-13</time>		
+					</dd>
+				</dl>
+			</div>
+		</main>
+	</div>
+
+	<script src="js/zepto.min.js"></script>
+	<script src='js/iscroll5.js'></script>
+	<script src='js/fn.js'></script>
+	<script src='js/index.js'></script>
+</body>
+</html>
